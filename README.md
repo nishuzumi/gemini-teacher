@@ -2,7 +2,7 @@
 
 这是一个基于 Google Gemini AI 的英语口语练习助手，它能实时识别你的英语发音，提供即时反馈和纠正建议。
 
-Make by [Box](https://x.com/boxmrchen)
+Made by [Box](https://x.com/boxmrchen) & [Amagi](https://x.com/ameowagi)
 
 ## 功能特点
 
@@ -61,13 +61,8 @@ pip install -r requirements.txt
 如果你需要设定代理，请填写 `HTTP_PROXY`，例如 `HTTP_PROXY=http://127.0.0.1:7890`
 
 `GOOGLE_API_KEY` 填写谷歌Gemini的API Key
-### 开启语音功能
-这个功能按需开启，`ELEVENLABS_API_KEY` 是语音功能的API KEY。
 
-获取方式：
-- 打开网站 [https://elevenlabs.io/](https://try.elevenlabs.io/2oulemau2lxk)
-- 点击右上角的Try for free，进行注册，有免费的1000个额度
-- 到个人设置中，生成API Key填入即可
+语音回复直接使用 Gemini Live API 的原生音频输出，无需额外的 TTS API Key。
 
 ```bash
 python starter.py
